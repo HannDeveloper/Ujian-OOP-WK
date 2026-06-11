@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
+/* header */
 header {
     background-color: #1a7f37;
     color: white;
@@ -34,14 +34,14 @@ header .header-subtitle {
     margin-top: 3px;
 }
 
-/* Container */
+/* container */
 .container {
     max-width: 1060px;
     margin: 30px auto;
     padding: 0 18px;
 }
 
-/* Layout 2 kolom */
+/* layout 2 kolom */
 .main-layout {
     display: flex;
     gap: 24px;
@@ -51,7 +51,7 @@ header .header-subtitle {
 .main-layout .col-left,
 .main-layout .col-right { flex: 1; min-width: 0; }
 
-/* Card & Panel */
+/* card dan panel */
 .card, .desc-panel, .struk {
     background: white;
     border-radius: 12px;
@@ -77,7 +77,7 @@ header .header-subtitle {
     color: #27ae60;
 }
 
-/* Form */
+/* form */
 .form-group { margin-bottom: 14px; }
 
 .form-group label {
@@ -126,7 +126,7 @@ header .header-subtitle {
 
 .form-group select { cursor: pointer; }
 
-/* Button */
+/* button */
 .btn-submit {
     width: 100%;
     padding: 12px;
@@ -164,7 +164,7 @@ header .header-subtitle {
 
 .error i { font-size: 16px; color: #e74c3c; }
 
-/* Deskripsi panel */
+/* deskripsii panel */
 .desc-panel p {
     font-size: 14px;
     line-height: 1.6;
@@ -198,7 +198,7 @@ header .header-subtitle {
     margin-bottom: 0;
 }
 
-/* Service list */
+/* service list */
 .service-list {
     list-style: none;
     padding: 0;
@@ -234,7 +234,7 @@ header .header-subtitle {
 .service-list li .service-name { font-weight: 600; font-size: 13px; }
 .service-list li .service-price { font-size: 12px; color: #27ae60; font-weight: 600; }
 
-/* Badges */
+/* badges */
 .feature-badges {
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +254,7 @@ header .header-subtitle {
     font-weight: 600;
 }
 
-/* Struk */
+/* struk pemesanan */
 .struk { margin-top: 24px; }
 
 .struk table {
@@ -292,7 +292,7 @@ header .header-subtitle {
     padding-top: 12px;
 }
 
-/* Footer */
+/* footer */
 .footer {
     text-align: center;
     padding: 20px;
@@ -303,7 +303,7 @@ header .header-subtitle {
 
 .footer i { color: #27ae60; margin: 0 3px; }
 
-/* Responsive */
+/* biar responsive */
 @media (max-width: 768px) {
     .main-layout { flex-direction: column; }
     .main-layout .col-left,
