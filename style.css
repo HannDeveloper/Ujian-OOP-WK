@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f5f0;
+    color: #2d3436;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #1a7f37;
+    color: white;
+    text-align: center;
+    padding: 18px 24px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.header-inner i { font-size: 26px; }
+
+header .header-subtitle {
+    font-size: 11px;
+    opacity: 0.85;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+/* Container */
+.container {
+    max-width: 1060px;
+    margin: 30px auto;
+    padding: 0 18px;
+}
+
+/* Layout 2 kolom */
+.main-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.main-layout .col-left,
+.main-layout .col-right { flex: 1; min-width: 0; }
+
+/* Card & Panel */
+.card, .desc-panel, .struk {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    margin-bottom: 22px;
+}
+
+.card h2, .desc-panel h2, .struk h2 {
+    color: #1a7f37;
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom: 2px solid #1a7f37;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card h2 i, .desc-panel h2 i, .struk h2 i {
+    font-size: 18px;
+    color: #27ae60;
+}
+
+/* Form */
+.form-group { margin-bottom: 14px; }
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #4a5568;
+}
+
+.form-group label i { color: #27ae60; font-size: 13px; }
+
+.form-group .input-wrapper { position: relative; }
+
+.form-group .input-wrapper > i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px 10px 38px;
+    border: 1px solid #d4d9d4;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    background-color: #fafcfa;
+    color: #2d3436;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #27ae60;
+    background-color: #fff;
+}
+
+.form-group select { cursor: pointer; }
+
+/* Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a7f37;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover { background-color: #155e2b; }
+
+/* Error */
+.error {
+    background-color: #fff5f5;
+    border: 1px solid #fecaca;
+    color: #c0392b;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.error i { font-size: 16px; color: #e74c3c; }
+
+/* Deskripsi panel */
+.desc-panel p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #636e72;
+    margin-bottom: 16px;
+}
+
+.desc-highlight {
+    background-color: #eef7ee;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    border-left: 3px solid #27ae60;
+}
+
+.desc-highlight h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a7f37;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.desc-highlight h3 i { font-size: 14px; color: #27ae60; }
+
+.desc-highlight p {
+    font-size: 13px;
+    color: #4a5568;
+    margin-bottom: 0;
+}
+
+/* Service list */
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+.service-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    background: #f8faf8;
+    border: 1px solid #e8f0e8;
+    font-size: 14px;
+}
+
+.service-list li i {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a7f37;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.service-list li .service-info { flex: 1; }
+.service-list li .service-name { font-weight: 600; font-size: 13px; }
+.service-list li .service-price { font-size: 12px; color: #27ae60; font-weight: 600; }
+
+/* Badges */
+.feature-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #eef7ee;
+    color: #1a7f37;
+    padding: 5px 10px;
+    border-radius: 14px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Struk */
+.struk { margin-top: 24px; }
+
+.struk table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.struk table td {
+    padding: 9px 4px;
+    border-bottom: 1px solid #eef0ee;
+}
+
+.struk table td:first-child {
+    color: #636e72;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.struk table td:first-child i { color: #27ae60; width: 16px; text-align: center; font-size: 13px; }
+
+.struk table td:last-child {
+    text-align: right;
+    font-weight: 500;
+}
+
+.struk table tr.baris-total td {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1a7f37;
+    border-top: 2px solid #1a7f37;
+    border-bottom: none;
+    padding-top: 12px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #a0aec0;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.footer i { color: #27ae60; margin: 0 3px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-layout { flex-direction: column; }
+    .main-layout .col-left,
+    .main-layout .col-right { flex: none; width: 100%; }
+    .container { margin: 20px auto; }
+}
